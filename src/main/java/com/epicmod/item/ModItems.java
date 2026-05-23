@@ -14,6 +14,7 @@ import java.util.function.Function;
 
 public class ModItems {
     public static final Item FOOD = registerItem("food", Item::new);
+    public static final Item BALL = registerItem("ball", Item::new);
 
 
 
@@ -27,6 +28,7 @@ public class ModItems {
 
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS).register(output -> {
             output.accept(FOOD);
+            output.accept(BALL);
         });
     }
 }

@@ -1,5 +1,6 @@
 package com.epicmod;
 
+import com.epicmod.creativemodetab.ModCreativeModeTabs;
 import com.epicmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -12,6 +13,8 @@ public class Epicmod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModCreativeModeTabs.registerModCreativeModeTabs();
+
 		ModItems.registerModItems();
 	}
 }

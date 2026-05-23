@@ -1,5 +1,8 @@
 {
-  "item.epicmod.food": "Food"
+  "item.epicmod.food": "Food",
+  "item.epicmod.ball": "Ball",
+  "creativemodetab.epicmod.food_items": "Food Items",
+  "creativemodetab.epicmod.ball_items": "Ball Items"
 
 
 }
