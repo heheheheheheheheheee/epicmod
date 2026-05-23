@@ -3,6 +3,7 @@ package com.epicmod;
 import com.epicmod.datagen.ModBlockLootTableProvider;
 import com.epicmod.datagen.ModBlockTagsProvider;
 import com.epicmod.datagen.ModModelProvider;
+import com.epicmod.datagen.ModRecipeProvider;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 
@@ -14,5 +15,6 @@ public class EpicmodDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModModelProvider::new);
 		pack.addProvider(ModBlockTagsProvider::new);
 		pack.addProvider(ModBlockLootTableProvider::new);
+		pack.addProvider(ModRecipeProvider::new);
 	}
 }
