@@ -18,6 +18,9 @@ public class ModBlocks {
     public static final Block FOOD_BLOCK = registerBlock("food_block",
             properties -> new Block(properties.strength(4f)
                     .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final Block BALL_BLOCK = registerBlock("ball_block",
+            properties -> new Block(properties.strength(4f)
+                    .requiresCorrectToolForDrops().sound(SoundType.BONE_BLOCK)));
 
     private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function) {
         Block toRegister = function.apply(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(Epicmod.MOD_ID, name))));

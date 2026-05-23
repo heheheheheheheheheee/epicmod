@@ -39,6 +39,15 @@ public class ModCreativeModeTabs {
 
                     }).build());
 
+    public static final CreativeModeTab BALL_BLOCK_TAB = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, Identifier.fromNamespaceAndPath(Epicmod.MOD_ID, "ball_block_items"),
+            FabricCreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.BALL_BLOCK))
+                    .title(Component.translatable("creativemodetab.epicmod.ball_block_items"))
+                    .displayItems((parameters, output) -> {
+                        output.accept(ModBlocks.BALL_BLOCK);
+
+
+                    }).build());
+
 
     public static void registerModCreativeModeTabs() {
         Epicmod.LOGGER.info("Registering Creative Mode Tabs for " + Epicmod.MOD_ID);
