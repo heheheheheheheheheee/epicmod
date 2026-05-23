@@ -4,7 +4,9 @@
   "block.epicmod.food_block": "Block of Food",
   "block.epicmod.ball_block": "Block of Ball",
   "creativemodetab.epicmod.food_items": "Food Items",
-  "creativemodetab.epicmod.ball_items": "Ball Items"
+  "creativemodetab.epicmod.ball_items": "Ball Items",
+  "creativemodetab.epicmod.food_block_items": "Food Block Items",
+  "creativemodetab.epicmod.ball_block_items": "Ball Block Items"
 
 
 
