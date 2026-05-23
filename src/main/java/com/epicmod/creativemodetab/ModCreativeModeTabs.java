@@ -18,6 +18,7 @@ public class ModCreativeModeTabs {
                     .displayItems((parameters, output) -> {
                         output.accept(ModItems.FOOD);
                         output.accept(ModItems.CHISEL);
+                        output.accept(ModBlocks.MAGIC_BLOCK);
 
                     }).build());
 

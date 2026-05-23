@@ -1,6 +1,7 @@
 package com.epicmod.block;
 
 import com.epicmod.Epicmod;
+import com.epicmod.block.custom.MagicBlock;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -21,6 +22,9 @@ public class ModBlocks {
     public static final Block BALL_BLOCK = registerBlock("ball_block",
             properties -> new Block(properties.strength(4f)
                     .requiresCorrectToolForDrops().sound(SoundType.BONE_BLOCK)));
+    public static final Block MAGIC_BLOCK = registerBlock("magic_block",
+            properties -> new MagicBlock(properties.strength(2f)
+                    .requiresCorrectToolForDrops().sound(SoundType.COPPER)));
 
     private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function) {
         Block toRegister = function.apply(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(Epicmod.MOD_ID, name))));

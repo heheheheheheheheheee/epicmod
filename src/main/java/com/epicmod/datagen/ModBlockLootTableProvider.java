@@ -20,5 +20,7 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
 
         add(ModBlocks.FOOD_BLOCK, createOreDrop(ModBlocks.FOOD_BLOCK, ModItems.FOOD));
         add(ModBlocks.BALL_BLOCK, createOreDrop(ModBlocks.BALL_BLOCK, ModItems.BALL));
+
+        dropSelf(ModBlocks.MAGIC_BLOCK);
     }
 }
