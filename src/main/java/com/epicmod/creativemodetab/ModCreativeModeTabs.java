@@ -1,6 +1,7 @@
 package com.epicmod.creativemodetab;
 
 import com.epicmod.Epicmod;
+import com.epicmod.block.ModBlocks;
 import com.epicmod.item.ModItems;
 import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
 import net.minecraft.core.Registry;
@@ -25,6 +26,15 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativemodetab.epicmod.ball_items"))
                     .displayItems((parameters, output) -> {
                         output.accept(ModItems.BALL);
+
+
+                    }).build());
+
+    public static final CreativeModeTab FOOD_BLOCK_TAB = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, Identifier.fromNamespaceAndPath(Epicmod.MOD_ID, "food_block_items"),
+            FabricCreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.FOOD_BLOCK))
+                    .title(Component.translatable("creativemodetab.epicmod.food_block_items"))
+                    .displayItems((parameters, output) -> {
+                        output.accept(ModBlocks.FOOD_BLOCK);
 
 
                     }).build());
