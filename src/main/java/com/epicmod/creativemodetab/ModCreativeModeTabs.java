@@ -17,7 +17,7 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativemodetab.epicmod.food_items"))
                     .displayItems((parameters, output) -> {
                         output.accept(ModItems.FOOD);
-
+                        output.accept(ModItems.CHISEL);
 
                     }).build());
 
