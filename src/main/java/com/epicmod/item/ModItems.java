@@ -1,6 +1,7 @@
 package com.epicmod.item;
 
 import com.epicmod.Epicmod;
+import com.epicmod.food.ModFoods;
 import com.epicmod.item.custom.ChiselItem;
 import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.minecraft.core.Registry;
@@ -18,6 +19,8 @@ public class ModItems {
     public static final Item BALL = registerItem("ball", Item::new);
 
     public static final Item CHISEL = registerItem("chisel", properties -> new ChiselItem(properties.durability(32)));
+    public static final Item STRAWBERRY = registerItem("strawberry", properties -> new Item(properties
+            .food(ModFoods.STRAWBERRY, ModFoods.STRAWBERRY_CONSUMABLE)));
 
     private static Item registerItem(String name, Function<Item.Properties, Item> function) {
         return Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(Epicmod.MOD_ID, name),

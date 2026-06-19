@@ -17,7 +17,6 @@ public class Epicmod implements ModInitializer {
 		ModCreativeModeTabs.registerModCreativeModeTabs();
 
 		ModItems.registerModItems();
-
 		ModBlocks.registerModBlocks();
 	}
 }

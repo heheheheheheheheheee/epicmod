@@ -19,6 +19,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.FOOD);
                         output.accept(ModItems.CHISEL);
                         output.accept(ModBlocks.MAGIC_BLOCK);
+                        output.accept(ModItems.STRAWBERRY);
 
                     }).build());
 
